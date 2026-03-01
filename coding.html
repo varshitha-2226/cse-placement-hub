@@ -1,1 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coding Interview Questions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<h1>Top Coding Interview Questions with Java Solutions</h1>
+
+<h2>1. Reverse a String</h2>
+<p><strong>Problem:</strong> Reverse a given string.</p>
+
+<h3>Java Solution:</h3>
+<pre>
+public class ReverseString {
+    public static void main(String[] args) {
+        String str = "hello";
+        String reversed = "";
+
+        for(int i = str.length()-1; i >= 0; i--) {
+            reversed += str.charAt(i);
+        }
+
+        System.out.println(reversed);
+    }
+}
+</pre>
+
+<p><strong>Time Complexity:</strong> O(n)</p>
+
+<hr>
+
+<h2>2. Check Palindrome</h2>
+<p><strong>Problem:</strong> Check if a string is palindrome.</p>
+
+<h3>Java Solution:</h3>
+<pre>
+public class Palindrome {
+    public static void main(String[] args) {
+        String str = "madam";
+        String reversed = "";
+
+        for(int i = str.length()-1; i >= 0; i--) {
+            reversed += str.charAt(i);
+        }
+
+        if(str.equals(reversed)) {
+            System.out.println("Palindrome");
+        } else {
+            System.out.println("Not Palindrome");
+        }
+    }
+}
+</pre>
+
+<p><strong>Time Complexity:</strong> O(n)</p>
+
+<hr>
+
+<h2>3. Find Largest Element in Array</h2>
+<p><strong>Problem:</strong> Find largest number in array.</p>
+
+<h3>Java Solution:</h3>
+<pre>
+public class LargestElement {
+    public static void main(String[] args) {
+        int[] arr = {3,5,1,9};
+        int max = arr[0];
+
+        for(int i = 1; i < arr.length; i++) {
+            if(arr[i] > max) {
+                max = arr[i];
+            }
+        }
+
+        System.out.println("Largest: " + max);
+    }
+}
+</pre>
+
+<p><strong>Time Complexity:</strong> O(n)</p>
+
+<a href="index.html">Back to Home</a>
+
+</body>
+</html>
