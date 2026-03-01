@@ -1,1 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Palindrome Program in Java with Example | CSE Placement Hub</title>
+    <meta name="description" content="Palindrome Program in Java with example, explanation, time complexity and interview tips. Beginner friendly guide.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<h1>Palindrome Program in Java</h1>
+
+<p>
+Checking whether a string is palindrome is a common Java interview question.
+A palindrome is a word that reads the same forward and backward.
+</p>
+
+<hr>
+
+<h2>Problem Statement</h2>
+<p>Write a Java program to check whether a string is palindrome.</p>
+
+<h2>Example</h2>
+<pre>
+Input: madam
+Output: Palindrome
+</pre>
+
+<hr>
+
+<h2>Java Code</h2>
+<pre>
+public class Palindrome {
+    public static void main(String[] args) {
+        String str = "madam";
+        String reversed = "";
+
+        for(int i = str.length() - 1; i >= 0; i--) {
+            reversed += str.charAt(i);
+        }
+
+        if(str.equals(reversed)) {
+            System.out.println("Palindrome");
+        } else {
+            System.out.println("Not Palindrome");
+        }
+    }
+}
+</pre>
+
+<hr>
+
+<h2>Explanation</h2>
+<p>
+We reverse the string and compare it with the original string.
+If both are equal, the string is a palindrome.
+</p>
+
+<hr>
+
+<h2>Time Complexity</h2>
+<p>O(n) — We traverse the string once.</p>
+
+<h2>Space Complexity</h2>
+<p>O(n) — Extra space is used to store reversed string.</p>
+
+<hr>
+
+<a href="index.html">Back to Home</a>
+
+</body>
+</html>
